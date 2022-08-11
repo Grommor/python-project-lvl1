@@ -4,4 +4,4 @@
 
 
 Take a look!
-https://asciinema.org/a/ZSIdVmyU1ixAEB12FfOAFc3CZ
+[![asciicast](https://asciinema.org/a/ZSIdVmyU1ixAEB12FfOAFc3CZ.png)](https://asciinema.org/a/ZSIdVmyU1ixAEB12FfOAFc3CZ)
