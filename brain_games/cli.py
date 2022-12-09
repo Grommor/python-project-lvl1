@@ -5,7 +5,7 @@ import prompt
 def user_welcome():
     global name
     name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
+    print(f'Hello, {name}!')
 
 def check_answer(right_answer, client_answer):
     right_answer = str(right_answer)
