@@ -5,20 +5,27 @@ from brain_games import cli
 import prompt
 
 
-def main():
-    cli.user_welcome()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def is_prime(n):
+    for i in range(2, n):
+        if (n % i) == 0:
+            return False
+    return True
 
+
+def brain_prime_game():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     while i < 3:
         question_number = randint(1, 100)
         print(f'Question: {question_number}')
         right_answer = 'no'
-        if 0 == (question_number % 2):
+        if is_prime(question_number):
             right_answer = 'yes'
-
         cli.check_answer(right_answer, prompt.string('Your answer: '))
-
         i += 1
 
+
+def main():
+    cli.user_welcome()
+    brain_prime_game()
     cli.user_bye(win=True)

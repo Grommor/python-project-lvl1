@@ -4,4 +4,17 @@
 
 
 Take a look!
-[![asciicast](https://asciinema.org/a/ZSIdVmyU1ixAEB12FfOAFc3CZ.png)](https://asciinema.org/a/ZSIdVmyU1ixAEB12FfOAFc3CZ)
+Brain-even
+[![asciicast](https://asciinema.org/a/ksEfiMVCzIOpT0Kg2H2U8n0vA.svg)](https://asciinema.org/a/ksEfiMVCzIOpT0Kg2H2U8n0vA)
+
+Brain-calc
+[![asciicast](https://asciinema.org/a/y4YZbOo6HQDklSEAqUpLT6ehp.svg)](https://asciinema.org/a/y4YZbOo6HQDklSEAqUpLT6ehp)
+
+Brain-gcd
+[![asciicast](https://asciinema.org/a/9E01bBRgDWcoFv3TNMALRnxgV.svg)](https://asciinema.org/a/9E01bBRgDWcoFv3TNMALRnxgV)
+
+Brain-prime
+[![asciicast](https://asciinema.org/a/bPhntLEOxGngBIuGiNDoOQm4S.svg)](https://asciinema.org/a/bPhntLEOxGngBIuGiNDoOQm4S)
+
+Brain-progression
+[![asciicast](https://asciinema.org/a/zN1bu60Ba0YY1Pd8FNcDJW1TI.svg)](https://asciinema.org/a/zN1bu60Ba0YY1Pd8FNcDJW1TI)

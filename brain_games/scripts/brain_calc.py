@@ -5,14 +5,12 @@ from brain_games import cli
 import prompt
 
 
-def main():
-    cli.user_welcome()
+def brain_calc_game():
     print('What is the result of the expression?')
     i = 0
     while i < 3:
         c = randint(0, 100)
         d = randint(0, 100)
-
         match randint(0, 2):
             case 0:
               right_answer = c + d
@@ -34,4 +32,8 @@ def main():
                 cli.check_answer(right_answer, client_answer)
                 i += 1
 
+
+def main():
+    cli.user_welcome()
+    brain_calc_game()
     cli.user_bye(win=True)
