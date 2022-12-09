@@ -2,5 +2,6 @@
 
 from brain_games import cli
 
+
 def main():
     cli.user_welcome()
