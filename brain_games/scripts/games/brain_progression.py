@@ -3,7 +3,6 @@
 from random import randint
 from brain_games import cli
 import prompt
-import math
 
 def main():
     cli.user_welcome()  
