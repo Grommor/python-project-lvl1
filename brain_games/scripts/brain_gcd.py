@@ -13,7 +13,7 @@ def brain_gcd_game():
         c = randint(1, 100)
         d = randint(1, 100)
         print(f'Question: {c} {d}')
-        cli.check_answer(math.gcd(c, d), prompt.string('Your answer: '))
+        cli.check_answer(math.gcd(c, d), prompt.string('Your answer: ', empty=True))
         i += 1
 
 

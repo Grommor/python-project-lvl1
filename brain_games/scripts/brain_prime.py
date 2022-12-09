@@ -21,7 +21,7 @@ def brain_prime_game():
         right_answer = 'no'
         if is_prime(question_number):
             right_answer = 'yes'
-        cli.check_answer(right_answer, prompt.string('Your answer: '))
+        cli.check_answer(right_answer, prompt.string('Your answer: ', empty=True))
         i += 1
 
 

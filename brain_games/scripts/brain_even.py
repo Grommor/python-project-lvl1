@@ -14,7 +14,7 @@ def brain_even_game():
         right_answer = 'no'
         if 0 == (question_number % 2):
             right_answer = 'yes'
-        cli.check_answer(right_answer, prompt.string('Your answer: '))
+        cli.check_answer(right_answer, prompt.string('Your answer: ', empty=True))
         i += 1
 
 
