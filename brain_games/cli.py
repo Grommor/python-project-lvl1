@@ -10,13 +10,13 @@ def user_welcome():
     print(f'Hello, {name}!')
 
 
-def check_answer(right_answer, client_answer):
-    right_answer = str(right_answer)
-    client_answer = str(client_answer)
-    if right_answer == client_answer:
+def check_answer(answer, question):
+    print(question)
+    client_answer = prompt.string("Your answer: ", empty=True)
+    if answer == client_answer:
         print('Correct!')
     else:
-        user_bye(client_answer, right_answer)
+        user_bye(client_answer, answer)
 
 
 def user_bye(answer=0, right_answer=0, win=0):
@@ -24,7 +24,7 @@ def user_bye(answer=0, right_answer=0, win=0):
         print(f'Congratulations, {name}!')
         exit()
     else:
-        print(f"'{answer.lower()}' is wrong answer ;(. \
+        print(f"'{answer}' is wrong answer ;(. \
 Correct answer was '{right_answer}'.")
         print(f"Let's try again, {name}!")
         exit()

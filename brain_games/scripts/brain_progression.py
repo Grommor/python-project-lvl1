@@ -1,24 +1,12 @@
 #!/usr/bin/env python3
 
-from random import randint
-from brain_games import cli
-import prompt
-
-
-def brain_progression_game():
-    print('What number is missing in the progression?')
-    i = 0
-    while i < 3:
-        d = randint(0, 9)
-        progression_list = list(range(randint(1, 15), 150, randint(1, 10)))
-        hidden_number = progression_list[d] 
-        progression_list[d] = '..'
-        print('Question: ' + " ".join(map(str, progression_list[0:10])))
-        cli.check_answer(hidden_number, prompt.string('Your answer: ', empty=True))
-        i += 1
+from brain_games.engine import run_game
+from brain_games.games import progression
 
 
 def main():
-    cli.user_welcome()
-    brain_progression_game()
-    cli.user_bye(win=True)
+    run_game(progression)
+
+
+if __name__ == "__main__":
+    main()
