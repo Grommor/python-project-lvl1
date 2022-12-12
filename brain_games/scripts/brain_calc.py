@@ -15,8 +15,6 @@ def brain_calc_game():
             case 0:
               right_answer = c + d
               client_answer = prompt.string(f"Question: {c} + {d}: ", empty=True)
-              cli.check_answer(right_answer, client_answer)
-              i += 1
             case 1:
               if c >= d:
                 right_answer = c - d
@@ -24,13 +22,13 @@ def brain_calc_game():
               else:
                 right_answer = d - c
                 client_answer = prompt.string(f"Question: {d} - {c}: ", empty=True)
-                cli.check_answer(right_answer, client_answer)
-                i += 1
             case 2:
                 right_answer = c * d
                 client_answer = prompt.string(f"Question: {c} * {d}: ", empty=True)
-                cli.check_answer(right_answer, client_answer)
-                i += 1
+
+        cli.check_answer(right_answer, client_answer)
+        i += 1
+
 
 
 def main():
