@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-
 from random import randint
-
 
 task = 'What number is missing in the progression?'
 
@@ -13,5 +10,3 @@ def generate_question_and_answer():
     progression_list[d] = '..'
     question = ('Question: ' + " ".join(map(str, progression_list[0:10])))
     return question, answer
-
-
