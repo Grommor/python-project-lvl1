@@ -13,7 +13,7 @@ def brain_progression_game():
         progression_list = list(range(randint(1, 15), 150, randint(1, 10)))
         hidden_number = progression_list[d] 
         progression_list[d] = '..'
-        print(f'Question: {progression_list[0:10]}')
+        print('Question: ' + " ".join(map(str, progression_list[0:10])))
         cli.check_answer(hidden_number, prompt.string('Your answer: ', empty=True))
         i += 1
 
