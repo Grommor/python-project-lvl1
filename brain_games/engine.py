@@ -7,7 +7,7 @@ def run_game(game):
     print(game.task)
     for i in range(rounds):
         question, answer = game.generate_question_and_answer()
-        cli.check_answer(answer, question)
+        cli.check_answer(str(answer), question)
     cli.user_bye(win=True)
 
 
