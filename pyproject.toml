@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "This project contains several games with arithmetic questions. During the game user receives questions. If the user gave 3 correct answers in a row, the game ends successfully, but if at least 1 question was answered incorrectly during the game, the game ends with a loss. Script stoped. "
 authors = ["masssmi <masssmi@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
-
+repository = "https://github.com/Grommor/python-project-lvl1"
+classifiers = [
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
