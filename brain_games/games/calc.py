@@ -16,6 +16,6 @@ def generate_question_and_answer():
         result = abs(member_1 - member_2)
     elif operation_sign == '*':
         result = member_1 * member_2
-    question = f'{member_1} {operation_sign} {member_2}'
+    question = f'Question: {member_1} {operation_sign} {member_2}'
     result = str(result)
     return question, result
