@@ -1,12 +1,14 @@
 from random import randint
 import math
 
-task = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
+INTERVAL_START = 1
+INTERVAL_END = 100
 
 
 def generate_question_and_answer():
-    c = randint(1, 100)
-    d = randint(1, 100)
-    question = f'Question: {c} {d}'
-    answer = str((math.gcd(c, d)))
+    member_1 = randint(INTERVAL_START, INTERVAL_END)
+    member_2 = randint(INTERVAL_START, INTERVAL_END)
+    question = f'Question: {member_1} {member_2}'
+    answer = str((math.gcd(member_1, member_2)))
     return question, answer

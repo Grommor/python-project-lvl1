@@ -1,19 +1,21 @@
-from random import randint
+from random import randint, choice
 
-task = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
+INTERVAL_START = 1
+INTERVAL_END = 100
+ARITHMETIC_SIGNS = ['+', '-', '*']
 
 
 def generate_question_and_answer():
-    c = randint(0, 100)
-    d = randint(0, 100)
-    e = randint(0, 2)
-    if e == 0:
-        answer = str(c + d)
-        question = (f"Question: {c} + {d}:")
-    elif e == 1:
-        answer = str(c - d)
-        question = (f"Question: {c} - {d}:")
-    elif e == 2:
-        answer = str(c * d)
-        question = (f"Question: {c} * {d}:")
-    return question, answer
+    operation_sign = choice(ARITHMETIC_SIGNS)
+    member_1 = randint(INTERVAL_START, INTERVAL_END)
+    member_2 = randint(INTERVAL_START, INTERVAL_END)
+    if operation_sign == '+':
+        result = member_1 + member_2
+    elif operation_sign == '-':
+        result = abs(member_1 - member_2)
+    elif operation_sign == '*':
+        result = member_1 * member_2
+    question = f'{member_1} {operation_sign} {member_2}'
+    result = str(result)
+    return question, result
